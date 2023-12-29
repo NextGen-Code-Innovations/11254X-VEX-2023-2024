@@ -11,7 +11,13 @@ void disabled() {}
 void competition_initialize() {}
 
 void autonomous(){
-    auton();
+    if (Auton_Selection_port == 0){  // button off
+        offensive();
+    } else if(Auton_Selection_port == 1){ // button on
+        defensive();
+    } else {
+        return 0;
+    }
 }
 
 void drive_FN(){  // this is the main drive function for the robot for op control -- DO NOT CHANGE

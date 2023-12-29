@@ -21,12 +21,16 @@
 
 
 // -------------------------------------------------- Extra motor ports
-#define FLY_WHEEL_MOTOR 5
+#define FLY_WHEEL_MOTOR 6
+#define ARM_LEFT_MOTOR 7
+#define ARM_RIGHT_MOTOR 8 
 
 
 // ---------------------------------------------------  Sensors 
-#define ROTATION_RIGHT_PORT 10
-#define ROTATION_LEFT_PORT 11
+#define ROTATION_RIGHT_PORT 11
+#define ROTATION_LEFT_PORT 12
+#define Radio_Port 21
+#define Auton_Selection_port 1 //A
 int sensorValue = 0;
 
 #endif
