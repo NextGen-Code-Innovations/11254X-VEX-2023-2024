@@ -73,3 +73,14 @@ void intake(double speed){
 void stopFlywheel(){
     motor_brake(FLY_WHEEL_MOTOR);
 }
+
+void pne_FN()
+{
+    static bool in_on = false;
+    for(;;) {
+        if (controller_get_digital_new_press(CONTROLLER_MASTER, DIGITAL_DOWN))
+            in_on = !in_on;
+        adi_digital_write(PENUMATICS, in_on);
+        task_delay(20);
+    }
+}

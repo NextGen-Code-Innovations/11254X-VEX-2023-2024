@@ -20,6 +20,9 @@
 #define BACK_RIGHT_MOTOR 4
 
 
+// --------------------------------------------------  PENUMATICS
+#define PENUMATICS 2 //B
+
 // -------------------------------------------------- Extra motor ports
 #define FLY_WHEEL_MOTOR 6
 #define ARM_LEFT_MOTOR 7

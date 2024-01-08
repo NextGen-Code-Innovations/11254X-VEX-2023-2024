@@ -3,9 +3,6 @@
 
 #include "main.h"
 
-//initialize 
-void initial();
-
 //sensors
 void getSensorPosition(double sensor);
 
